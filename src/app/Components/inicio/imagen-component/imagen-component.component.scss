@@ -1,0 +1,27 @@
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.circle-image {
+  position: relative;
+  width: 150px; // Tamaño del círculo
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; // Para que la imagen se ajuste bien al círculo
+  }
+
+  &:hover {
+    .camera-icon {
+      background-color: #f0f0f0; // Efecto hover opcional
+    }
+  }
+}

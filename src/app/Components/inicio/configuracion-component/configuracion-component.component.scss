@@ -1,0 +1,19 @@
+ion-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    ion-button {
+      width: 100%; // Mantener el botón a todo lo ancho
+      transition: background-color 0.2s; // Transición suave
+
+      &:hover {
+        background-color: #0056b3; // Color de fondo al pasar el mouse
+      }
+    }
+
+    .edit-container {
+      height: 100%;
+      width: 100%; // Asegurarse de que ocupe todo el ancho
+    }
+  }

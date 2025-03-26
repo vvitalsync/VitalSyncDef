@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  background: linear-gradient(135deg, #007bff, #ffffff, #007bff);
+
+  .login-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 40px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+  }
+
+  h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #007bff;
+    margin-bottom: 10px;
+  }
+
+  .subtitle {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .form-group {
+    margin-bottom: 18px;
+    text-align: left;
+
+    label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: #333;
+      font-size: 0.95rem;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 12px;
+      font-size: 1rem;
+      border: 2px solid #007bff;
+      border-radius: 8px;
+      background-color: #fff;
+      color: #333;
+      transition: all 0.3s ease-in-out;
+
+      &:focus {
+        border-color: #0056b3;
+        outline: none;
+        background-color: #f4f4f9;
+      }
+    }
+  }
+
+  // ✅ Estilos para el recuadro "Recordar sesión"
+  .remember-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.95rem;
+    color: #333;
+    margin-bottom: 18px;
+    font-weight: 500;
+    cursor: pointer;
+
+    input[type="checkbox"] {
+      appearance: none;
+      width: 18px;
+      height: 18px;
+      border: 2px solid #007bff;
+      border-radius: 4px;
+      position: relative;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      
+      &:checked {
+        background-color: #007bff;
+        border-color: #007bff;
+      }
+
+      &:checked::after {
+        content: '✔';
+        font-size: 14px;
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    label {
+      cursor: pointer;
+    }
+  }
+
+  .btn-primary {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+
+  .register-link {
+    margin-top: 20px;
+    font-size: 0.9rem;
+
+    a {
+      color: #007bff;
+      font-weight: bold;
+      cursor: pointer;
+      transition: color 0.3s;
+
+      &:hover {
+        color: #0056b3;
+      }
+    }
+  }
+}

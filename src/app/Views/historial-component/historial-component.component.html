@@ -1,0 +1,12 @@
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let item of historial">
+      <ion-icon name="pulse-outline" slot="start"></ion-icon>
+      <ion-label>
+        <h2>{{ item.titulo }}</h2>
+        <p>{{ item.descripcion }}</p>
+        <ion-note>{{ item.fecha }}</ion-note>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

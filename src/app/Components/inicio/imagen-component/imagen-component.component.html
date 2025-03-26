@@ -1,0 +1,8 @@
+<div class="image-container">
+  <div class="circle-image">
+    <img [src]="photoUrl || defaultPhotoUrl" alt="User Photo" (click)="selectPhoto()" />
+    <div class="camera-icon" (click)="selectPhoto()">
+      📸
+    </div>
+  </div>
+</div>
